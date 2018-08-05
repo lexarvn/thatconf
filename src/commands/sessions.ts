@@ -13,6 +13,7 @@ export default class Sessions extends Command {
     secondary: flags.string({char: 's', description: 'secondary category', options: ['ALM', 'Architecture', 'ARVR', 'Cloud', 'DataStorage', 'DevOps', 'IoTMaker', 'Languages', 'MobileClient', 'SoftSkills', 'Security', 'Testing', 'Tools', 'UxUi', 'Web', 'Other', 'Family', 'Keynote', 'THAT Conference', 'Open Spaces', 'Precon', 'FamilyPrecon'] }),
     day: flags.string({char: 'd', description: 'day of conference', options: ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday']}),
     title: flags.string({ char: 't', description: 'session title contains term'}),
+    name: flags.string({ char: 'n', description: 'name of speaker'}),
     json: flags.boolean({description: 'format output as json'})
   }
 
@@ -42,6 +43,10 @@ export default class Sessions extends Command {
     if (flags.title) {
       data = data.filter((sessions: any) => sessions.Title != null)
       data = data.filter((sessions: any) => sessions.Title.toLowerCase().indexOf(flags.title!.toLowerCase()) > -1)
+    }
+
+    if (flags.name) {
+      data = data.filter((sessions: any) => (sessions.Speakers[0].FirstName.toLowerCase() + ' ' + sessions.Speakers[0].LastName.toLowerCase()).indexOf(flags.name!.toLowerCase()) > -1)
     }
 
     if (flags.json) {
