@@ -15,7 +15,7 @@ CLI for That Conference (https://www.thatconference.com/)
 <!-- toc -->
 * [thatconf](#thatconf)
 <!-- tocstop -->
-## Usage
+# Usage
 <!-- usage -->
 ```sh-session
 $ npm install -g thatconf
@@ -29,7 +29,7 @@ USAGE
 ...
 ```
 <!-- usagestop -->
-## Commands
+# Commands
 <!-- commands -->
 * [`thatconf help [COMMAND]`](#thatconf-help-command)
 * [`thatconf sessions`](#thatconf-sessions)
