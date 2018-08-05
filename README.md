@@ -11,8 +11,94 @@ CLI for That Conference (https://www.thatconference.com/)
 [![License](https://img.shields.io/npm/l/thatconf.svg)](https://github.com/wadewegner/thatconf/blob/master/package.json)
 
 <!-- toc -->
+* [thatconf](#thatconf)
+<!-- tocstop -->
 ## Usage
 <!-- usage -->
+```sh-session
+$ npm install -g thatconf
+$ thatconf COMMAND
+running command...
+$ thatconf (-v|--version|version)
+thatconf/0.1.0 darwin-x64 node-v9.10.1
+$ thatconf --help [COMMAND]
+USAGE
+  $ thatconf COMMAND
+...
+```
+<!-- usagestop -->
 ## Commands
 <!-- commands -->
+* [`thatconf help [COMMAND]`](#thatconf-help-command)
+* [`thatconf sessions`](#thatconf-sessions)
+* [`thatconf tags [FILE]`](#thatconf-tags-file)
 
+### `thatconf help [COMMAND]`
+
+display help for thatconf
+
+```
+USAGE
+  $ thatconf help [COMMAND]
+
+ARGUMENTS
+  COMMAND  command to show help for
+
+OPTIONS
+  --all  see all commands in CLI
+```
+
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.0.5/src/commands/help.ts)_
+
+### `thatconf sessions`
+
+describe the command here
+
+```
+USAGE
+  $ thatconf sessions
+
+OPTIONS
+  -d, --day=Saturday|Sunday|Monday|Tuesday|Wednesday
+      day of conference
+
+  -h, --help
+      show CLI help
+
+  -l, --level=level
+      level
+
+  -p, 
+  --primary=ALM|Architecture|ARVR|Cloud|DataStorage|DevOps|IoTMaker|Languages|MobileClient|SoftSkills|Security|Testing|T
+  ools|UxUi|Web|Other|Family|Keynote|THAT Conference|Open Spaces|Precon|FamilyPrecon
+      primary category
+
+  -s, 
+  --secondary=ALM|Architecture|ARVR|Cloud|DataStorage|DevOps|IoTMaker|Languages|MobileClient|SoftSkills|Security|Testing
+  |Tools|UxUi|Web|Other|Family|Keynote|THAT Conference|Open Spaces|Precon|FamilyPrecon
+      secondary category
+
+  -y, --year=year
+      [default: 2018] year
+
+  --json
+      format output as json
+```
+
+_See code: [src/commands/sessions.ts](https://github.com/wadewegner/thatconf/blob/v0.1.0/src/commands/sessions.ts)_
+
+### `thatconf tags`
+
+describe the command here
+
+```
+USAGE
+  $ thatconf tags
+
+OPTIONS
+  -h, --help       show CLI help
+  -y, --year=year  [default: 2018] year
+```
+
+_See code: [src/commands/tags.ts](https://github.com/wadewegner/thatconf/blob/v0.1.0/src/commands/tags.ts)_
+<!-- commandsstop -->
