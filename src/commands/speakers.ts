@@ -21,12 +21,12 @@ export default class Speakers extends Command {
 
     if (flags.title) {
       data = data.filter((speakers: any) => speakers.Title != null)
-      data = data.filter((speakers: any) => speakers.Title.toLowerCase().indexOf(flags.title.toLowerCase()) > -1)
+      data = data.filter((speakers: any) => speakers.Title.toLowerCase().indexOf(flags.title!.toLowerCase()) > -1)
     }
 
     if (flags.company) {
       data = data.filter((speakers: any) => speakers.Company != null)
-      data = data.filter((speakers: any) => speakers.Company.toLowerCase().indexOf(flags.company.toLowerCase()) > -1)
+      data = data.filter((speakers: any) => speakers.Company.toLowerCase().indexOf(flags.company!.toLowerCase()) > -1)
     }
 
 //str.indexOf(st) > -1
