@@ -2,7 +2,7 @@ import {Command, flags} from '@oclif/command'
 import axios from 'axios'
 
 export default class Tags extends Command {
-  static description = 'describe the command here'
+  static description = 'command for getting all tags'
 
   static flags = {
     help: flags.help({char: 'h'}),

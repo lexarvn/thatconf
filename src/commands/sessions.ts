@@ -3,7 +3,7 @@ import axios from 'axios'
 import * as moment from 'moment'
 
 export default class Sessions extends Command {
-  static description = 'describe the command here'
+  static description = 'command for looking up sessions'
 
   static flags = {
     help: flags.help({char: 'h'}),
