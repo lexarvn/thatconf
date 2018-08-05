@@ -24,7 +24,7 @@ $ npm install -g thatconf
 $ thatconf COMMAND
 running command...
 $ thatconf (-v|--version|version)
-thatconf/0.1.2 darwin-x64 node-v9.10.1
+thatconf/0.1.3 darwin-x64 node-v9.10.1
 $ thatconf --help [COMMAND]
 USAGE
   $ thatconf COMMAND
@@ -89,7 +89,7 @@ OPTIONS
       format output as json
 ```
 
-_See code: [src/commands/sessions.ts](https://github.com/wadewegner/thatconf/blob/v0.1.2/src/commands/sessions.ts)_
+_See code: [src/commands/sessions.ts](https://github.com/wadewegner/thatconf/blob/v0.1.3/src/commands/sessions.ts)_
 
 ## `thatconf tags`
 
@@ -104,5 +104,5 @@ OPTIONS
   -y, --year=year  [default: 2018] year
 ```
 
-_See code: [src/commands/tags.ts](https://github.com/wadewegner/thatconf/blob/v0.1.2/src/commands/tags.ts)_
+_See code: [src/commands/tags.ts](https://github.com/wadewegner/thatconf/blob/v0.1.3/src/commands/tags.ts)_
 <!-- commandsstop -->
