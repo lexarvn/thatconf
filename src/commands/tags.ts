@@ -29,7 +29,7 @@ export default class Tags extends Command {
     var uniqueTags = Array.from(new Set(allTags))
 
     for (let tag of uniqueTags) {
-      this.log(tag.Name)
+      this.log(tag)
     }
   }
 }
