@@ -1,6 +1,6 @@
 {
   "name": "thatconf",
-  "version": "0.4.0",
+  "version": "0.2.1",
   "author": "Wade Wegner @wadewegner",
   "bin": {
     "thatconf": "./bin/run"
@@ -10,7 +10,6 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
-    "@oclif/plugin-update": "^1.2.14",
     "@types/lodash": "^4.14.116",
     "axios": "^0.18.0",
     "lodash": "^4.17.10",
@@ -49,34 +48,8 @@
   "oclif": {
     "commands": "./lib/commands",
     "bin": "thatconf",
-    "update": {
-      "s3": {
-        "bucket": "oclif-staging",
-        "templates": {
-          "target": {
-            "unversioned": "tarballs/<%- bin %>/<%- channel === 'stable' ? '' : 'channels/' + channel + '/' %><%- bin %>-<%- platform %>-<%- arch %><%- ext %>",
-            "versioned": "tarballs/<%- bin %>/<%- channel === 'stable' ? '' : 'channels/' + channel + '/' %><%- bin %>-v<%- version %>/<%- bin %>-v<%- version %>-<%- platform %>-<%- arch %><%- ext %>",
-            "manifest": "tarballs/<%- bin %>/<%- channel === 'stable' ? '' : 'channels/' + channel + '/' %><%- platform %>-<%- arch %>"
-          },
-          "vanilla": {
-            "unversioned": "tarballs/<%- bin %>/<%- channel === 'stable' ? '' : 'channels/' + channel + '/' %><%- bin %><%- ext %>",
-            "versioned": "tarballs/<%- bin %>/<%- channel === 'stable' ? '' : 'channels/' + channel + '/' %><%- bin %>-v<%- version %>/<%- bin %>-v<%- version %><%- ext %>",
-            "manifest": "tarballs/<%- bin %>/<%- channel === 'stable' ? '' : 'channels/' + channel + '/' %>version"
-          }
-        }
-      },
-      "node": {
-        "version": "10.4.0",
-        "targets": [
-          "darwin-x64",
-          "linux-x64",
-          "win32-x64"
-        ]
-      }
-    },
     "plugins": [
-      "@oclif/plugin-help",
-      "@oclif/plugin-update"
+      "@oclif/plugin-help"
     ]
   },
   "repository": "wadewegner/thatconf",
