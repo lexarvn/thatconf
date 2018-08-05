@@ -12,6 +12,7 @@ export default class Sessions extends Command {
     primary: flags.string({char: 'p', description: 'primary category', options: ['ALM', 'Architecture', 'ARVR', 'Cloud', 'DataStorage', 'DevOps', 'IoTMaker', 'Languages', 'MobileClient', 'SoftSkills', 'Security', 'Testing', 'Tools', 'UxUi', 'Web', 'Other', 'Family', 'Keynote', 'THAT Conference', 'Open Spaces', 'Precon', 'FamilyPrecon'] }),
     secondary: flags.string({char: 's', description: 'secondary category', options: ['ALM', 'Architecture', 'ARVR', 'Cloud', 'DataStorage', 'DevOps', 'IoTMaker', 'Languages', 'MobileClient', 'SoftSkills', 'Security', 'Testing', 'Tools', 'UxUi', 'Web', 'Other', 'Family', 'Keynote', 'THAT Conference', 'Open Spaces', 'Precon', 'FamilyPrecon'] }),
     day: flags.string({char: 'd', description: 'day of conference', options: ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday']}),
+    title: flags.string({ char: 't', description: 'session title contains term'}),
     json: flags.boolean({description: 'format output as json'})
   }
 
@@ -36,6 +37,11 @@ export default class Sessions extends Command {
 
     if (flags.day) {
       data = data.filter((sessions: any) => moment(sessions.ScheduledDateTime).format('dddd') === flags.day)
+    }
+
+    if (flags.title) {
+      data = data.filter((sessions: any) => sessions.Title != null)
+      data = data.filter((sessions: any) => sessions.Title.toLowerCase().indexOf(flags.title!.toLowerCase()) > -1)
     }
 
     if (flags.json) {
