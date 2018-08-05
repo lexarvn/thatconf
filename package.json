@@ -1,6 +1,6 @@
 {
   "name": "thatconf",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": "Wade Wegner @wadewegner",
   "bin": {
     "thatconf": "./bin/run"

@@ -24,7 +24,7 @@ $ npm install -g thatconf
 $ thatconf COMMAND
 running command...
 $ thatconf (-v|--version|version)
-thatconf/0.3.1 darwin-x64 node-v9.10.1
+thatconf/0.3.2 darwin-x64 node-v9.10.1
 $ thatconf --help [COMMAND]
 USAGE
   $ thatconf COMMAND
@@ -73,6 +73,9 @@ OPTIONS
   -l, --level=level
       level
 
+  -n, --name=name
+      name of speaker
+
   -p, 
   --primary=ALM|Architecture|ARVR|Cloud|DataStorage|DevOps|IoTMaker|Languages|MobileClient|SoftSkills|Security|Testing|T
   ools|UxUi|Web|Other|Family|Keynote|THAT Conference|Open Spaces|Precon|FamilyPrecon
@@ -93,7 +96,7 @@ OPTIONS
       format output as json
 ```
 
-_See code: [src/commands/sessions.ts](https://github.com/wadewegner/thatconf/blob/v0.3.1/src/commands/sessions.ts)_
+_See code: [src/commands/sessions.ts](https://github.com/wadewegner/thatconf/blob/v0.3.2/src/commands/sessions.ts)_
 
 ## `thatconf speakers`
 
@@ -111,7 +114,7 @@ OPTIONS
   --json                 format output as json
 ```
 
-_See code: [src/commands/speakers.ts](https://github.com/wadewegner/thatconf/blob/v0.3.1/src/commands/speakers.ts)_
+_See code: [src/commands/speakers.ts](https://github.com/wadewegner/thatconf/blob/v0.3.2/src/commands/speakers.ts)_
 
 ## `thatconf tags`
 
@@ -126,5 +129,5 @@ OPTIONS
   -y, --year=year  [default: 2018] year
 ```
 
-_See code: [src/commands/tags.ts](https://github.com/wadewegner/thatconf/blob/v0.3.1/src/commands/tags.ts)_
+_See code: [src/commands/tags.ts](https://github.com/wadewegner/thatconf/blob/v0.3.2/src/commands/tags.ts)_
 <!-- commandsstop -->
