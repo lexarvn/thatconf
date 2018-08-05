@@ -22,7 +22,7 @@ $ npm install -g thatconf
 $ thatconf COMMAND
 running command...
 $ thatconf (-v|--version|version)
-thatconf/0.1.0 darwin-x64 node-v9.10.1
+thatconf/0.1.1 darwin-x64 node-v9.10.1
 $ thatconf --help [COMMAND]
 USAGE
   $ thatconf COMMAND
@@ -33,9 +33,9 @@ USAGE
 <!-- commands -->
 * [`thatconf help [COMMAND]`](#thatconf-help-command)
 * [`thatconf sessions`](#thatconf-sessions)
-* [`thatconf tags [FILE]`](#thatconf-tags-file)
+* [`thatconf tags`](#thatconf-tags)
 
-### `thatconf help [COMMAND]`
+## `thatconf help [COMMAND]`
 
 display help for thatconf
 
@@ -52,7 +52,7 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.0.5/src/commands/help.ts)_
 
-### `thatconf sessions`
+## `thatconf sessions`
 
 describe the command here
 
@@ -87,9 +87,9 @@ OPTIONS
       format output as json
 ```
 
-_See code: [src/commands/sessions.ts](https://github.com/wadewegner/thatconf/blob/v0.1.0/src/commands/sessions.ts)_
+_See code: [src/commands/sessions.ts](https://github.com/wadewegner/thatconf/blob/v0.1.1/src/commands/sessions.ts)_
 
-### `thatconf tags`
+## `thatconf tags`
 
 describe the command here
 
@@ -102,5 +102,5 @@ OPTIONS
   -y, --year=year  [default: 2018] year
 ```
 
-_See code: [src/commands/tags.ts](https://github.com/wadewegner/thatconf/blob/v0.1.0/src/commands/tags.ts)_
+_See code: [src/commands/tags.ts](https://github.com/wadewegner/thatconf/blob/v0.1.1/src/commands/tags.ts)_
 <!-- commandsstop -->
