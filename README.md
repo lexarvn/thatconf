@@ -24,7 +24,7 @@ $ npm install -g thatconf
 $ thatconf COMMAND
 running command...
 $ thatconf (-v|--version|version)
-thatconf/0.1.3 darwin-x64 node-v9.10.1
+thatconf/0.2.0 darwin-x64 node-v9.10.1
 $ thatconf --help [COMMAND]
 USAGE
   $ thatconf COMMAND
@@ -35,6 +35,7 @@ USAGE
 <!-- commands -->
 * [`thatconf help [COMMAND]`](#thatconf-help-command)
 * [`thatconf sessions`](#thatconf-sessions)
+* [`thatconf speakers`](#thatconf-speakers)
 * [`thatconf tags`](#thatconf-tags)
 
 ## `thatconf help [COMMAND]`
@@ -56,7 +57,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.0.5
 
 ## `thatconf sessions`
 
-describe the command here
+command for looking up sessions
 
 ```
 USAGE
@@ -89,11 +90,29 @@ OPTIONS
       format output as json
 ```
 
-_See code: [src/commands/sessions.ts](https://github.com/wadewegner/thatconf/blob/v0.1.3/src/commands/sessions.ts)_
+_See code: [src/commands/sessions.ts](https://github.com/wadewegner/thatconf/blob/v0.2.0/src/commands/sessions.ts)_
+
+## `thatconf speakers`
+
+command for looking up speakers
+
+```
+USAGE
+  $ thatconf speakers
+
+OPTIONS
+  -c, --company=company  company contains term
+  -h, --help             show CLI help
+  -t, --title=title      title contains term
+  -y, --year=year        [default: 2018] year
+  --json                 format output as json
+```
+
+_See code: [src/commands/speakers.ts](https://github.com/wadewegner/thatconf/blob/v0.2.0/src/commands/speakers.ts)_
 
 ## `thatconf tags`
 
-describe the command here
+command for getting all tags
 
 ```
 USAGE
@@ -104,5 +123,5 @@ OPTIONS
   -y, --year=year  [default: 2018] year
 ```
 
-_See code: [src/commands/tags.ts](https://github.com/wadewegner/thatconf/blob/v0.1.3/src/commands/tags.ts)_
+_See code: [src/commands/tags.ts](https://github.com/wadewegner/thatconf/blob/v0.2.0/src/commands/tags.ts)_
 <!-- commandsstop -->
