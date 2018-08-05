@@ -24,7 +24,7 @@ $ npm install -g thatconf
 $ thatconf COMMAND
 running command...
 $ thatconf (-v|--version|version)
-thatconf/0.3.0 darwin-x64 node-v9.10.1
+thatconf/0.4.0 darwin-x64 node-v9.10.1
 $ thatconf --help [COMMAND]
 USAGE
   $ thatconf COMMAND
@@ -94,7 +94,7 @@ OPTIONS
       format output as json
 ```
 
-_See code: [src/commands/sessions.ts](https://github.com/wadewegner/thatconf/blob/v0.3.0/src/commands/sessions.ts)_
+_See code: [src/commands/sessions.ts](https://github.com/wadewegner/thatconf/blob/v0.4.0/src/commands/sessions.ts)_
 
 ## `thatconf speakers`
 
@@ -112,7 +112,7 @@ OPTIONS
   --json                 format output as json
 ```
 
-_See code: [src/commands/speakers.ts](https://github.com/wadewegner/thatconf/blob/v0.3.0/src/commands/speakers.ts)_
+_See code: [src/commands/speakers.ts](https://github.com/wadewegner/thatconf/blob/v0.4.0/src/commands/speakers.ts)_
 
 ## `thatconf tags`
 
@@ -127,7 +127,7 @@ OPTIONS
   -y, --year=year  [default: 2018] year
 ```
 
-_See code: [src/commands/tags.ts](https://github.com/wadewegner/thatconf/blob/v0.3.0/src/commands/tags.ts)_
+_See code: [src/commands/tags.ts](https://github.com/wadewegner/thatconf/blob/v0.4.0/src/commands/tags.ts)_
 
 ## `thatconf update [CHANNEL]`
 
