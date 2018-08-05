@@ -14,6 +14,8 @@ CLI for That Conference (https://www.thatconference.com/)
 
 <!-- toc -->
 * [thatconf](#thatconf)
+* [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
