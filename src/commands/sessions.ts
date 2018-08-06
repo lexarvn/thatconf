@@ -57,12 +57,13 @@ export default class Sessions extends Command {
         const title = session.Title.trim()
         const firstName = session.Speakers[0].FirstName.trim()
         const lastName = session.Speakers[0].LastName.trim()
+        const room = session.ScheduledRoom
 
         if (dayName != lastDayName && !flags.day) {
           this.log(`-- ${dayName} --`)
         }
 
-        this.log(`"${title}" by ${firstName} ${lastName} at ${moment(session.ScheduledDateTime).format('hh:mm a')}`)
+        this.log(`"${title}" by ${firstName} ${lastName} at ${moment(session.ScheduledDateTime).format('hh:mm a')} in ${room}`)
         lastDayName = dayName;
       }
     }
