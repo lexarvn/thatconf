@@ -14,9 +14,7 @@ export default class Speakers extends Command {
 
   async run() {
     const { args, flags } = this.parse(Speakers)
-
     let url = `https://www.thatconference.com/api3/speakers/getspeakers?year=${flags.year}`
-
     let { data } = await axios.get(url)
 
     if (flags.title) {
@@ -28,8 +26,6 @@ export default class Speakers extends Command {
       data = data.filter((speakers: any) => speakers.Company != null)
       data = data.filter((speakers: any) => speakers.Company.toLowerCase().indexOf(flags.company!.toLowerCase()) > -1)
     }
-
-//str.indexOf(st) > -1
 
     if (flags.json) {
       this.log(JSON.stringify(data))

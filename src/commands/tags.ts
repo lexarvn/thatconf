@@ -13,7 +13,7 @@ export default class Tags extends Command {
    
     const {args, flags} = this.parse(Tags)
     const url = `https://www.thatconference.com/api3/Session/GetAcceptedSessions?year=${flags.year}`
-    
+
     let {data} = await axios.get(url)
     let allTags:string[] = new Array() 
 

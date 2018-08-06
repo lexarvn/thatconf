@@ -19,9 +19,7 @@ export default class Sessions extends Command {
 
   async run() {
     const {flags} = this.parse(Sessions)
-
     let url = `https://www.thatconference.com/api3/Session/GetAcceptedSessions?year=${flags.year}`
-    
     let {data} = await axios.get(url)
 
     if (flags.level) {
